@@ -1,9 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function() { // funcion global 
   
-  console.log('Probar con el numero valido 4544164785372342');      
+ // console.log('Probar con el numero valido 4544164785372342');      
   
   // Declaramos las variables que vamos a utilizar
-  var $inputCard = $('#card-number');
+  var $inputCard = $('#card-number'); // variable 
   var $inputMonth = $('.input-month');
   var $inputYear = $('.input-year');
   var $buttonNext = $('#next');
@@ -16,17 +16,17 @@ $(document).ready(function() {
   });
   
   // Funciones que habilita el boton del formulario
-  function activeButton() {
+  function activeButton() { // funcion local 
     $buttonNext.attr('disabled', false);
   } 
  
   // Funcion que desabilita el boton del formulario
-  function desactiveButton() {  
+  function desactiveButton() {  // funcion local 
     $buttonNext.attr('disabled', true);
   } 
 
   // Funcion que valida la longitud del input ingresado por el usuario
-  function longitud(input) {
+  function longitud(input) { // funcion local
     if (input.trim().length === 16) {
       return input;
     }
